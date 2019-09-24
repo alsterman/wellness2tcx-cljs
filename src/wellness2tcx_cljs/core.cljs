@@ -63,13 +63,14 @@
    [:p "Input the mywellness json: " [json-input app-state]]
    [:p "Input the starttime on hh:mm:ss: " [start-time-input app-state]]
    [:p [convert-button app-state]]
-   [:h3 "app-state"
-    [:p (-> @app-state
-            (keys)
-            (str))]
-    [:p (-> @app-state
-            (str))]
-    ]])
+   ;[:h3 "app-state"
+   ; [:p (-> @app-state
+   ;         (keys)
+   ;         (str))]
+   ; [:p (-> @app-state
+   ;         (str))]
+   ; ]
+   ])
 
 
 
