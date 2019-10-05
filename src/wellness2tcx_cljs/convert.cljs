@@ -1,7 +1,7 @@
 (ns wellness2tcx-cljs.convert
   (:require
             ;[goog.string :as gstring]
-            ;[goog.string.format]
+            [goog.string.format]
             [goog.string :refer [format]]
             [clojure.data]
 
