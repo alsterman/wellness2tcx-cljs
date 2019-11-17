@@ -1,12 +1,42 @@
 # wellness2tcx-cljs
 
-FIXME: Write a one-line description of your library/project.
+A Clojure program to convert MyWellness® json training data to Training Center XML.
 
-## Overview
+The resulting tcx file can then be uploaded to other sites such as [stava.com](strava.com).
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+## New alternative!!
+I've developed a webversion that converts the raw data in the browser.
+[https://alsterman.github.io/wellness2tcx-cljs/](https://alsterman.github.io/wellness2tcx-cljs/)
+The code runs in your browser and the data never leaves your machine.
 
-## Setup
+The source code is available at https://github.com/alsterman/wellness2tcx-cljs
+
+## Usage
+
+### Getting the raw data from [mywellness.com](mywellness.com)
+1. Open up Google Chrome.
+2. Log in to [mywellness.com](mywellness.com) and navigate to the workout you want to convert.
+3. Open the chrome developer tools and navigate to the network tab.
+4. Refresh the page
+5. Filter the requests by `Details?` 
+![filtering requests](images/filter-requests.png)
+6. Right click the last response and `Copy -> Copy respose`
+![copy the response](images/copy-response.png)
+7. The raw data is now on the clipboard.
+
+### Converting the data
+1. Go to [https://alsterman.github.io/wellness2tcx-cljs/](https://alsterman.github.io/wellness2tcx-cljs/)
+2. Paste the raw data into the field.
+3. Enter the time of your exercise.
+4. A resulting file will be downloaded to your computer. It can be uploaded to another site such as Strava.
+
+## License
+
+Copyright © 2019 Marcus Alsterman
+
+
+
+## Development Setup
 
 To get an interactive development environment run:
 
@@ -31,7 +61,3 @@ To create a production build run:
 
 And open your browser in `resources/public/index.html`. You will not
 get live reloading, nor a REPL. 
-
-## License
-
-Copyright © 2019 Marcus Alsterman
