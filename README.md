@@ -4,13 +4,6 @@ A Clojure program to convert MyWellness® json training data to Training Center 
 
 The resulting tcx file can then be uploaded to other sites such as [stava.com](strava.com).
 
-## New alternative!!
-I've developed a webversion that converts the raw data in the browser.
-[https://alsterman.github.io/wellness2tcx-cljs/](https://alsterman.github.io/wellness2tcx-cljs/)
-The code runs in your browser and the data never leaves your machine.
-
-The source code is available at https://github.com/alsterman/wellness2tcx-cljs
-
 ## Usage
 
 ### Getting the raw data from [mywellness.com](mywellness.com)
