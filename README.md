@@ -1,6 +1,6 @@
 # wellness2tcx-cljs
 
-A Clojure program to convert MyWellness® json training data to Training Center XML.
+[A Website](https://alsterman.github.io/wellness2tcx-cljs/) to convert MyWellness® json training data to Training Center XML.
 
 The resulting tcx file can then be uploaded to other sites such as [stava.com](strava.com).
 
